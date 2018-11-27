@@ -1,8 +1,6 @@
 package com.company;
 
 public class CodeWordChecker implements StringChecker {
-    private String pass;
-    private String $;
     private int max, min;
     private String str;
     public CodeWordChecker(String str, int max, int min){
@@ -10,9 +8,6 @@ public class CodeWordChecker implements StringChecker {
         this.min = min;
         this.str = str;
     }
-
-
-
     public int getMax(){
         return max;
     }
@@ -22,7 +17,7 @@ public class CodeWordChecker implements StringChecker {
     @Override
     public boolean isValid(String illegalStr) {
         if(this.str.indexOf(illegalStr) == 1) {
-        return true;
+            return true;
         }
         return false;
     }
